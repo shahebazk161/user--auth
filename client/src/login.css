@@ -1,0 +1,90 @@
+body {
+  background: linear-gradient(120deg, #f58529 0%, #dd2a7b 50%, #515bd4 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.login-container {
+  max-width: 370px;
+  margin: 70px auto;
+  padding: 40px 32px 32px 32px;
+  background: rgba(255,255,255,0.93);
+  border-radius: 28px 8px 28px 8px;
+  box-shadow: 0 8px 32px 0 #0002, 0 2px 8px #dd2a7b22;
+  text-align: center;
+  border: 2.5px solid transparent;
+  border-image: linear-gradient(120deg, #f58529 0%, #dd2a7b 60%, #515bd4 100%);
+  border-image-slice: 1;
+  position: relative;
+  backdrop-filter: blur(2px);
+}
+
+.login-container h2 {
+  margin-bottom: 30px;
+  color: #f58529;
+  font-size: 2.1em;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-container input {
+  padding: 13px 16px;
+  border-radius: 14px;
+  border: 1.5px solid #e6ecf0;
+  font-size: 1.08em;
+  background: #fafafa;
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+  box-shadow: 0 1px 4px #f5852911;
+}
+
+.login-container input:focus {
+  border: 1.5px solid #f58529;
+  background: #fff;
+  box-shadow: 0 2px 8px #f5852922;
+}
+
+.login-container button {
+  padding: 13px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #dd2a7b 0%, #f58529 60%, #515bd4 100%);
+  color: #fff;
+  font-size: 1.08em;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px #dd2a7b22;
+  transition: background 0.2s, box-shadow 0.2s;
+  letter-spacing: 1px;
+}
+
+.login-container button:hover {
+  background: linear-gradient(90deg, #515bd4 0%, #dd2a7b 60%, #f58529 100%);
+  box-shadow: 0 4px 16px #f5852933;
+}
+
+.login-container p {
+  margin-top: 22px;
+  font-size: 1em;
+  color: #515bd4;
+}
+
+.login-container a {
+  color: #dd2a7b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: text-decoration 0.2s, color 0.2s;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+  color: #f58529;
+}

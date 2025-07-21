@@ -1,0 +1,124 @@
+/* Whole container with glassmorphism + soft shadow */
+.home-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  color: #222;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.8s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  background: linear-gradient(to right, #00d2ff, #3a47d5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+}
+
+/* Welcome */
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* Buttons: Write & Logout */
+button.btn {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 40px;
+  border: none;
+  margin: 10px 10px 20px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-success {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  box-shadow: 0 4px 14px rgba(0, 114, 255, 0.3);
+}
+
+.btn-success:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 114, 255, 0.4);
+}
+
+.btn-danger {
+  background: linear-gradient(to right, #f85032, #e73827);
+  color: white;
+  box-shadow: 0 4px 14px rgba(231, 56, 39, 0.3);
+}
+
+.btn-danger:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(231, 56, 39, 0.4);
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #3a47d5;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.btn-link:hover {
+  color: #0072ff;
+}
+
+/* Blog section */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+li {
+  background: #ffffffdd;
+  padding: 18px 24px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+li b {
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+/* Sub-heading */
+h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  color: #2c3e50;
+}

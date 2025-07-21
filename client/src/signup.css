@@ -1,0 +1,100 @@
+body {
+  background: linear-gradient(120deg, #f58529 0%, #dd2a7b 50%, #515bd4 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.signup-container {
+  max-width: 370px;
+  margin: 60px auto;
+  padding: 38px 32px 32px 32px;
+  background: rgba(255,255,255,0.97);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px 0 #0002, 0 2px 8px #dd2a7b22;
+  text-align: center;
+  border: 1.5px solid #e6ecf0;
+  position: relative;
+}
+
+.signup-container::before {
+  content: "";
+  position: absolute;
+  top: -3px; left: -3px; right: -3px; bottom: -3px;
+  z-index: -1;
+  border-radius: 24px;
+  background: linear-gradient(120deg, #f58529 0%, #dd2a7b 50%, #515bd4 100%);
+  opacity: 0.7;
+  filter: blur(8px);
+}
+
+.signup-container h2 {
+  margin-bottom: 30px;
+  color: #dd2a7b;
+  font-size: 2.2em;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container input[type="text"] {
+  padding: 13px 16px;
+  border-radius: 12px;
+  border: 1.5px solid #e6ecf0;
+  font-size: 1.08em;
+  background: #fafafa;
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+  box-shadow: 0 1px 4px #dd2a7b11;
+}
+
+.signup-container input:focus {
+  border: 1.5px solid #dd2a7b;
+  background: #fff;
+  box-shadow: 0 2px 8px #dd2a7b22;
+}
+
+.signup-container button {
+  padding: 13px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #f58529 0%, #dd2a7b 60%, #515bd4 100%);
+  color: #fff;
+  font-size: 1.08em;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px #dd2a7b22;
+  transition: background 0.2s, box-shadow 0.2s;
+  letter-spacing: 1px;
+}
+
+.signup-container button:hover {
+  background: linear-gradient(90deg, #515bd4 0%, #dd2a7b 60%, #f58529 100%);
+  box-shadow: 0 4px 16px #dd2a7b33;
+}
+
+.signup-container p {
+  margin-top: 22px;
+  font-size: 1em;
+  color: #515bd4;
+}
+
+.signup-container a {
+  color: #dd2a7b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: text-decoration 0.2s, color 0.2s;
+}
+
+.signup-container a:hover {
+  text-decoration: underline;
+  color: #f58529;
+}
